@@ -1,6 +1,7 @@
 package com.example.chen.testphotoview;
 
 import android.app.Application;
+import android.graphics.Color;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -32,7 +33,7 @@ public class MyApplication extends Application {
     }
 
     private void initPhotoView() {
-        ThemeConfig theme = new ThemeConfig.Builder()
+        ThemeConfig theme = new ThemeConfig.Builder().setTitleBarBgColor(Color.YELLOW)
         .build();
         //配置功能
 
